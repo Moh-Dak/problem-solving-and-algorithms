@@ -23,6 +23,8 @@ void DisplayCheckResult(bool Found, int NumberToSearch);
 
 int main(void)
 {
+    srand(static_cast<unsigned int>(time(0)));
+
     ArrayData Data;
 
     Data.SizeOfArray = ReadSizeOfArray("Enter the size of the array (1-100):\n");

@@ -21,7 +21,8 @@ void ShuffleElementsOfArray(ArrayData &Data);
 
 void PrintShuffledArray(ArrayData &Data);
 
-int main(void) {
+int main(void)
+{
 
     srand(static_cast<unsigned int>(time(0))); // call once in main, before any rand() calls
 
@@ -44,7 +45,8 @@ ArrayData ReadSizeOfArray(const std::string &Message)
 {
     ArrayData Data;
 
-    do{
+    do
+    {
         std::cout << Message;
 
         std::cin >> Data.SizeOfArray;
